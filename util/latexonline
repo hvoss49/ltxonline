@@ -6,8 +6,8 @@
 # | |___ (_| | |_  __/>  <_____| |_| | | | | | | | | |  __/
 # |_____\__,_|\__\___/_/\_\     \___/|_| |_|_|_|_| |_|\___|
 #
-# WEB Site: latex.aslushnikov.com
-# Issues/bugs: https://github.com/aslushnikov/latex-online
+# WEB Site: ltxonline.hvoss.org
+# Issues/bugs: https://github.com/hvoss49/ltxonline
 #
 # Command-line interface for latex-online service
 #
@@ -46,7 +46,7 @@ Examples:
   images/tex/other files, and main file like DIPLOMA.TEX, then
       laton -g DIPLOMA.TEX
 
-Please file all questions, bugs and feature requests to https://github.com/aslushnikov/latex-online
+Please file all questions, bugs and feature requests to https://github.com/hvoss49/ltxonline
 ">&2
 }
 

@@ -1,4 +1,4 @@
-var BASE_URL = 'https://latexonline.cc';
+var BASE_URL = 'https://ltxonline.hvoss.org';
 
 var form;
 
