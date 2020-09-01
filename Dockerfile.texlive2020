@@ -1,8 +1,8 @@
 #####################################################################################
 # Compile this dockerfile with
-#        time sudo docker build -t aslushnikov/latex-online:latest -f Dockerfile .
+#        time sudo docker build -t hvoss49/ltxonline:latest -f Dockerfile .
 # Run docker image
-#       sudo docker run -d -p 2700:2700 --rm --name latex-online aslushnikov/latex-online:latest
+#       sudo docker run -d -p 2700:2700 --rm --name ltxonline hvoss49/ltxonline:latest
 #####################################################################################
 # Latex-Online container
 
@@ -11,7 +11,7 @@
 # Registry viewer: https://gitlab.com/islandoftex/images/texlive/container_registry
 FROM registry.gitlab.com/islandoftex/images/texlive:TL2020-2020-05-17-04-19-src
 
-MAINTAINER Andrey Lushnikov aslushnikov@gmail.com
+MAINTAINER Herbert Voss herbert@voss.mobi
 
 # Install git & Node.JS
 RUN apt-get clean && apt-get update && apt-get install -y git-core nodejs npm && \
