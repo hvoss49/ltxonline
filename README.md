@@ -13,11 +13,11 @@ This service is developed to compile latex documents online. It can build PDF di
 
 In addition, the service provides command-line utility (for compiling local documents), API and Stand-Alone version. See more below.
 
-[Latex-Online](http://latexonline.cc)
+[Latex-Online](http://ltxonline.hvoss.org)
 
 ## Contents
 
-- [Latex-Online](#latex-online)
+- [Latex-Online](#ltxonline)
     - [Capabilities](#capabilities)
     - [API](#api)
         - [Compile url](#compile-url)

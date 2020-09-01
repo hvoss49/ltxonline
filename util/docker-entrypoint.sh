@@ -4,7 +4,7 @@ set -e
 # Cleanup www folder
 rm -rf /var/www
 # Copy and install the latest & greatest Latex-Online
-git clone https://github.com/aslushnikov/latex-online /var/www
+git clone https://github.com/hvoss49/ltxonline /var/www
 cd /var/www
 npm install .
 

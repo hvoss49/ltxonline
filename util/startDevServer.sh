@@ -2,7 +2,7 @@
 set -e
 
 # Pull image from upstream:
-# docker pull aslushnikov/latex-online
+# docker pull hvoss49/ltxonline
 
 pushd "$(dirname $0)" > /dev/null
 # git root directory
@@ -17,5 +17,5 @@ docker run \
     -p 2700:2700                `: # bind host port 2700 to containers 2700` \
     --env NODE_ENV='development'`: # launch in DEV environment` \
     --env PORT=2700             `: # define service HTTP port` \
-    aslushnikov/latex-online    `: # run image latex2` \
+    hvoss49/ltxonline           `: # run image latex2` \
     /bin/bash -c "node node_modules/nodemon/bin/nodemon.js -e js,jade app.js"
