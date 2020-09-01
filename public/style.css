@@ -1,0 +1,104 @@
+nav {
+    padding: 1rem 0 0rem 0;
+    margin-bottom: -1rem;
+}
+.form {
+    background-color: rgb(42, 76, 130);
+    padding: 3rem 0 3rem 0;
+    margin-bottom: 2rem;
+    padding: 6rem 0 6rem 0;
+}
+
+.form label {
+    white-space: nowrap;
+}
+
+.form h1, .form h2, .form h3, .form h4, .form h5, .form h6, .form span {
+    color: white;
+}
+
+.hbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.hbox > * {
+    flex-shrink: 0;
+}
+
+.navigation-item {
+    margin-left: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.github-stars {
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.form label {
+    color: white;
+}
+
+.information {
+    margin-top: 5rem;
+}
+
+#examples-select {
+    width: 12rem;
+    margin-left: 2rem;
+}
+
+#build-url-button {
+    --primary-color: #FB8C00;
+    --secondary-color: #F57C00;
+}
+
+#documentation-button {
+    --primary-color: hsla(217, 51%, 58%, 1);
+    --secondary-color: hsla(217, 51%, 48%, 1);
+}
+
+#documentation-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    margin-left: 1rem;
+}
+h5 {
+    font-weight: 600;
+}
