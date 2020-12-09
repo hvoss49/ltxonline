@@ -135,7 +135,7 @@ app.get('/compile', async (req, res) => {
     pendingTrackIds.delete(trackId);
 
     var forceCompilation = req.query && !!req.query.force;
-    var command = req.query && req.query.command ? req.query.command : 'pdflatex';
+    var command = req.query && req.query.command ? req.query.command : 'lualatex';
     command = command.trim().toLowerCase();
     var preparation;
     if (req.query.text) {
@@ -159,7 +159,7 @@ app.post('/data', upload.any(), async (req, res) => {
         sendError(res, 'ERROR: files are not uploaded to server.');
         return;
     }
-    var command = req.query && req.query.command ? req.query.command : 'pdflatex';
+    var command = req.query && req.query.command ? req.query.command : 'lualatex';
     command = command.trim().toLowerCase();
     var file = req.files[0];
     var preparation = await latexOnline.prepareTarballCompilation(file.path, req.query.target, command);

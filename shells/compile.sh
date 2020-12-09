@@ -34,7 +34,7 @@ logFile=$5
 export LC_ALL=C.UTF-8
 cd $rootdir
 LATEXRUN="$(dirname $0)"/../latexrun/latexrun
-PYTHONUNBUFFERED=true $LATEXRUN --verbose-cmd --latex-cmd=${command} -Wall -o $outputFile $target &>$logFile
+LATEXUNBUFFERED=true $LATEXRUN --verbose-cmd --latex-cmd=${command} -Wall -o $outputFile $target &>$logFile
 
 # if no PDF created, then exitcode 1
 if [[ ! -e $outputFile ]]; then
