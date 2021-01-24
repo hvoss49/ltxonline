@@ -744,7 +744,7 @@ class LaTeX(Task):
         # check for incompatible user-provided arguments (note:
         # arguments can be given with one or two dashes and those with
         # values can use an equals or a space).
-        if  self.__cmd == "python": 
+        if ("python3" == self.__cmd) or ("ipython3" == self.__cmd): 
           return [self.__cmd] + self.__cmd_args + [filename]
         else:
           return [self.__cmd] + self.__cmd_args + \
