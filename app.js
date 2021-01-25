@@ -90,7 +90,7 @@ async function handleResult(res, preparation, force, downloadName) {
 app.get('/version', (req, res) => {
     res.json({
         version: VERSION,
-        link: `http://github.com/aslushnikov/latex-online/commit/${VERSION}`
+        link: `http://github.com/hvoss49/ltxonline/commit/${VERSION}`
     });
 });
 

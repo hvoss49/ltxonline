@@ -58,13 +58,13 @@ describe(baseUrl, function() {
         });
         describe('url', function() {
             it('goodURL', async function() {
-                var goodURL = 'https://raw.githubusercontent.com/aslushnikov/latex-online/master/sample/sample.tex';
+                var goodURL = 'https://raw.githubusercontent.com/hvoss49/ltxonline/master/sample/sample.tex';
                 var url = baseUrl + '/compile?url=' + encodeURIComponent(goodURL);
                 var request = createGetRequest(url);
                 await expectPdf(request);
             });
             it('badURL', async function() {
-                var badURL = 'https://raw.githubusercontent.com/aslushnikov/latex-online/master/sample/bad.tex';
+                var badURL = 'https://raw.githubusercontent.com/hvoss49/ltxonline/master/sample/bad.tex';
                 var url = baseUrl + '/compile?url=' + encodeURIComponent(badURL);
                 var request = createGetRequest(url);
                 await expectError(request);

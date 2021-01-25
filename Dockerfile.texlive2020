@@ -14,12 +14,10 @@ FROM registry.gitlab.com/islandoftex/images/texlive:TL2020-2020-05-17-04-19-src
 MAINTAINER Herbert Voss herbert@voss.mobi
 
 # Install git & Node.JS
-<<<<<<< HEAD
 
-=======
->>>>>>> f8222da7f66efc0fcf1923bf38c4124f8c03ab97
+
 RUN apt-get clean && apt-get update && apt-get install -y git-core nodejs npm python3 python3-pip ipython3 && \
-    pip3 install --no-cache-dir ipython matplotlib pillow && \
+    pip3 install --no-cache-dir ipython matplotlib pillow pandas && \
     rm -rf /var/lib/apt/lists/* 
 
 COPY ./util/docker-entrypoint.sh /
