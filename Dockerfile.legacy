@@ -15,7 +15,13 @@ MAINTAINER Herbert Voss herbert@voss.mobi
 
 # Install git & Node.JS
 RUN apt-get clean && apt-get update && apt-get install -y git-core nodejs npm && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* \
+    apt-get install -y python3 \
+    apt-get install -y ipython3 \
+    apt-get install -y pip3 \
+    pip3 install ipython \
+    pip3 install matplotlib 
+
 
 COPY ./util/docker-entrypoint.sh /
 
