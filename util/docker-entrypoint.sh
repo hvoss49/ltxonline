@@ -2,10 +2,10 @@
 set -e
 
 # Cleanup www folder
-rm -rf /var/www
+rm -rf /var/www/html/ltxonline
 # Copy and install the latest & greatest Latex-Online
-git clone https://github.com/hvoss49/ltxonline /var/www
-cd /var/www
+git clone https://github.com/hvoss49/ltxonline /var/www/html/ltxonline
+cd /var/www/html/ltxonline
 npm install .
 
 export NODE_ENV=production

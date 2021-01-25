@@ -747,9 +747,7 @@ class LaTeX(Task):
         if  self.__cmd == "python": 
           return [self.__cmd] + self.__cmd_args + [filename]
         else:
-          return [self.__cmd] + self.__cmd_args + \
-             ['-interaction', 'nonstopmode', '-recorder',
-              '-output-directory', self.__obj_dir, filename]
+          return [self.__cmd] + self.__cmd_args + ['-interaction', 'nonstopmode', '-recorder', '-output-directory', self.__obj_dir, filename]
 
     def _execute(self):
         # Run latex
